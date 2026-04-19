@@ -299,6 +299,8 @@ public class KitManager {
         rod.addUnsafeEnchantment(Enchantment.KNOCKBACK, 4);
         player.getInventory().addItem(rod);
 
+        player.getInventory().addItem(new ItemStack(Material. ARROW, 64));
+
 
         ItemStack helmet = new ItemStack(Material.NETHERITE_HELMET);
         helmet.addEnchantment(Enchantment.PROTECTION, 3);

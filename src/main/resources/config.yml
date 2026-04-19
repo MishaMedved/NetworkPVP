@@ -1,0 +1,25 @@
+spawn:
+  world: world
+  x: -1.5
+  y: 96.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+respawn:
+  auto-give-last-kit: true
+  clear-inventory-on-join: true
+  clear-drops-on-death: true
+
+kit-selector:
+  material: NETHER_STAR
+  slot: 4
+  name: "&bKit-Auswahl"
+
+kits:
+  sword:
+    enabled: true
+  soup:
+    enabled: true
+  mace:
+    enabled: true

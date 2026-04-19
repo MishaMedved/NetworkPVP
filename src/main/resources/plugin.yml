@@ -1,0 +1,12 @@
+name: NetworkPvP
+version: 1.0-SNAPSHOT
+main: de.mixaghg.networkpvp.NetworkPvPPlugin
+api-version: '1.21'
+author: MixaGHG
+
+commands:
+  spawn:
+    description: Teleportiert dich zum PvP-Spawn
+    usage: /spawn
+  kit:
+    description: Öffnet das Kit-Menü

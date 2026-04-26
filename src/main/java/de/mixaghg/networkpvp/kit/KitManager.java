@@ -171,7 +171,7 @@ public class KitManager {
     private void giveSwordKit(Player player) {
 
         ItemStack sword = new ItemStack(Material.NETHERITE_SWORD);
-        sword.addUnsafeEnchantment(Enchantment.SHARPNESS, 6);
+        sword.addUnsafeEnchantment(Enchantment.SHARPNESS, 67);
         player.getInventory().addItem(sword);
 
         ItemStack rod = new ItemStack(Material.FISHING_ROD);
@@ -179,7 +179,7 @@ public class KitManager {
         player.getInventory().addItem(rod);
 
         ItemStack bow = new ItemStack(Material.BOW);
-        bow.addEnchantment(Enchantment.PUNCH, 3);
+        bow.addUnsafeEnchantment(Enchantment.PUNCH, 3);
         player.getInventory().addItem(bow);
 
 
@@ -191,19 +191,19 @@ public class KitManager {
         player.getInventory().addItem(new ItemStack(Material.SPECTRAL_ARROW, 64));
 
         ItemStack helmet = new ItemStack(Material.NETHERITE_HELMET);
-        helmet.addUnsafeEnchantment(Enchantment.PROTECTION, 20);
+        helmet.addUnsafeEnchantment(Enchantment.PROTECTION, 67);
         player.getInventory().setHelmet(helmet);
 
         ItemStack chestplate = new ItemStack(Material.NETHERITE_CHESTPLATE);
-        chestplate.addUnsafeEnchantment(Enchantment.PROTECTION, 20);
+        chestplate.addUnsafeEnchantment(Enchantment.PROTECTION, 67);
         player.getInventory().setChestplate(chestplate);
 
         ItemStack leggings = new ItemStack(Material.DIAMOND_LEGGINGS);
-        leggings.addUnsafeEnchantment(Enchantment.PROTECTION, 20);
+        leggings.addUnsafeEnchantment(Enchantment.PROTECTION, 67);
         player.getInventory().setLeggings(leggings);
 
         ItemStack boots = new ItemStack(Material.DIAMOND_BOOTS);
-        boots.addUnsafeEnchantment(Enchantment.PROTECTION, 20);
+        boots.addUnsafeEnchantment(Enchantment.PROTECTION, 67);
         player.getInventory().setBoots(boots);
     }
 
@@ -239,12 +239,9 @@ public class KitManager {
     private void giveMaceKit(Player player) {
 
         ItemStack mace = new ItemStack(Material.MACE);
-        mace.addEnchantment(Enchantment.WIND_BURST, 1);
-        mace.addEnchantment(Enchantment.DENSITY, 2);
         player.getInventory().addItem(mace);
 
         ItemStack sword = new ItemStack(Material.STONE_SWORD);
-        sword.addUnsafeEnchantment(Enchantment.KNOCKBACK, 3);
         player.getInventory().addItem(sword);
 
         player.getInventory().setItemInOffHand(new ItemStack(Material.WIND_CHARGE, 64));
@@ -272,13 +269,12 @@ public class KitManager {
         player.getInventory().setLeggings(leggings);
 
         ItemStack boots = new ItemStack(Material.NETHERITE_BOOTS);
-        boots.addEnchantment(Enchantment.FEATHER_FALLING, 4);
         player.getInventory().setBoots(boots);
     }
 
     private void giveFireballKit(Player player) {
         ItemStack sword = new ItemStack(Material.DIAMOND_SWORD);
-        sword.addEnchantment(Enchantment.SHARPNESS, 2);
+        sword.addUnsafeEnchantment(Enchantment.SHARPNESS, -2);
         sword.addEnchantment(Enchantment.FIRE_ASPECT, 1);
         player.getInventory().addItem(sword);
 

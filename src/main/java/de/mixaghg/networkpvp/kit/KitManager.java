@@ -171,7 +171,7 @@ public class KitManager {
     private void giveSwordKit(Player player) {
 
         ItemStack sword = new ItemStack(Material.NETHERITE_SWORD);
-        sword.addEnchantment(Enchantment.SHARPNESS, 2);
+        sword.addUnsafeEnchantment(Enchantment.SHARPNESS, 6);
         player.getInventory().addItem(sword);
 
         ItemStack rod = new ItemStack(Material.FISHING_ROD);
@@ -179,31 +179,31 @@ public class KitManager {
         player.getInventory().addItem(rod);
 
         ItemStack bow = new ItemStack(Material.BOW);
-        bow.addEnchantment(Enchantment.PUNCH, 2);
+        bow.addEnchantment(Enchantment.PUNCH, 3);
         player.getInventory().addItem(bow);
 
 
         player.getInventory().addItem(new ItemStack(Material.LAVA_BUCKET));
         player.getInventory().addItem(new ItemStack(Material.WATER_BUCKET));
         player.getInventory().addItem(new ItemStack(Material.GOLDEN_APPLE, 10));
-        player.getInventory().addItem(new ItemStack(Material.ENDER_PEARL, 4));
-        player.getInventory().addItem(new ItemStack(Material.WIND_CHARGE, 3));
-        player.getInventory().addItem(new ItemStack(Material.ARROW, 64));
+        player.getInventory().addItem(new ItemStack(Material.ENDER_PEARL, 16));
+        player.getInventory().addItem(new ItemStack(Material.WIND_CHARGE, 64));
+        player.getInventory().addItem(new ItemStack(Material.SPECTRAL_ARROW, 64));
 
-        ItemStack helmet = new ItemStack(Material.DIAMOND_HELMET);
-        helmet.addEnchantment(Enchantment.PROTECTION, 3);
+        ItemStack helmet = new ItemStack(Material.NETHERITE_HELMET);
+        helmet.addUnsafeEnchantment(Enchantment.PROTECTION, 20);
         player.getInventory().setHelmet(helmet);
 
-        ItemStack chestplate = new ItemStack(Material.IRON_CHESTPLATE);
-        chestplate.addEnchantment(Enchantment.PROTECTION, 2);
+        ItemStack chestplate = new ItemStack(Material.NETHERITE_CHESTPLATE);
+        chestplate.addUnsafeEnchantment(Enchantment.PROTECTION, 20);
         player.getInventory().setChestplate(chestplate);
 
-        ItemStack leggings = new ItemStack(Material.IRON_LEGGINGS);
-        leggings.addEnchantment(Enchantment.PROTECTION, 2);
+        ItemStack leggings = new ItemStack(Material.DIAMOND_LEGGINGS);
+        leggings.addUnsafeEnchantment(Enchantment.PROTECTION, 20);
         player.getInventory().setLeggings(leggings);
 
-        ItemStack boots = new ItemStack(Material.IRON_BOOTS);
-        boots.addEnchantment(Enchantment.PROTECTION, 2);
+        ItemStack boots = new ItemStack(Material.DIAMOND_BOOTS);
+        boots.addUnsafeEnchantment(Enchantment.PROTECTION, 20);
         player.getInventory().setBoots(boots);
     }
 
@@ -239,12 +239,12 @@ public class KitManager {
     private void giveMaceKit(Player player) {
 
         ItemStack mace = new ItemStack(Material.MACE);
-        mace.addEnchantment(Enchantment.WIND_BURST, 3);
-        mace.addEnchantment(Enchantment.DENSITY, 5);
+        mace.addEnchantment(Enchantment.WIND_BURST, 1);
+        mace.addEnchantment(Enchantment.DENSITY, 2);
         player.getInventory().addItem(mace);
 
         ItemStack sword = new ItemStack(Material.STONE_SWORD);
-        sword.addUnsafeEnchantment(Enchantment.KNOCKBACK, 2);
+        sword.addUnsafeEnchantment(Enchantment.KNOCKBACK, 3);
         player.getInventory().addItem(sword);
 
         player.getInventory().setItemInOffHand(new ItemStack(Material.WIND_CHARGE, 64));
@@ -282,7 +282,7 @@ public class KitManager {
         sword.addEnchantment(Enchantment.FIRE_ASPECT, 1);
         player.getInventory().addItem(sword);
 
-        player.getInventory().setItemInOffHand(new ItemStack(Material.FIRE_CHARGE, 20));
+        player.getInventory().addItem(new ItemStack(Material.FIRE_CHARGE, 20));
 
         ItemStack bow = new ItemStack(Material.BOW);
         bow.addUnsafeEnchantment(Enchantment.PUNCH, 4);
@@ -293,10 +293,9 @@ public class KitManager {
         player.getInventory().addItem(new ItemStack(Material.ENDER_PEARL, 12));
         player.getInventory().addItem(new ItemStack(Material.WIND_CHARGE, 20));
         player.getInventory().addItem(new ItemStack(Material.GOLDEN_APPLE, 10));
-        player.getInventory().addItem(new ItemStack(Material.PANDA_SPAWN_EGG, 3));
-
+        player.getInventory().setItemInOffHand(new ItemStack(Material.PANDA_SPAWN_EGG, 3));
         ItemStack rod = new ItemStack(Material.FISHING_ROD);
-        rod.addUnsafeEnchantment(Enchantment.KNOCKBACK, 4);
+        rod.addUnsafeEnchantment(Enchantment.KNOCKBACK, 10);
         player.getInventory().addItem(rod);
 
         player.getInventory().addItem(new ItemStack(Material. ARROW, 64));
